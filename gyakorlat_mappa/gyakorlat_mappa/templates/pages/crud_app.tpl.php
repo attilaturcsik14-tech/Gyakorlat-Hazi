@@ -1,5 +1,5 @@
 <?php
-// Csak akkor fut le, ha megnyomták a küldés gombot
+/** @var PDO $pdo */
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['mentes'])) {
     $nev = $_POST['nev'];
     $tipus = $_POST['tipus'];

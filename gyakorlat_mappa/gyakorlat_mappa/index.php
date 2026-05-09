@@ -1,14 +1,14 @@
 <?php
 session_start();
-include('./includes/config.inc.php');
-include('./config.php'); // Itt olvassuk be a $pdo-t!
+include('./includes/config.inc.php'); 
+//include('./config.php');
 
 $oldal = $_SERVER['QUERY_STRING'];
 
 $oldal = str_replace("page=", "", $oldal);
 
 if ($oldal != "" && isset($oldalak[$oldal])) {
-    // Ha létezik a fájl, betöltjük
+    
     if (file_exists("./templates/pages/{$oldalak[$oldal]['fajl']}.tpl.php")) {
         $keres = $oldalak[$oldal];
     } else {
