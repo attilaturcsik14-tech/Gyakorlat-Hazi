@@ -3,9 +3,11 @@ if (!isset($_SESSION['user_id'])) {
     echo "<h2>Nincs jogosultsága az oldal megtekintéséhez!</h2>";
     return;
 }
+require_once('includes/config.inc.php');
 
-$stmt = $pdo->query("SELECT nev, datum, felhasznalo_id, uzenet FROM uzenetek ORDER BY datum DESC");
+$stmt = $dbh->query("SELECT nev, datum, felhasznalo_id, uzenet FROM uzenetek ORDER BY datum DESC");
 $uzenetek = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
 ?>
 
 <h2>Beérkezett üzenetek</h2>

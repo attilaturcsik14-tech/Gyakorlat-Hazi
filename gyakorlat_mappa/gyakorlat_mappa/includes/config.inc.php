@@ -12,6 +12,7 @@ $oldalak = array(
     'kapcsolat' => array('fajl' => 'kapcsolat', 'szoveg' => 'Kapcsolat'),
     'uzenetek' => array('fajl' => 'uzenetek', 'szoveg' => 'Üzenetek'),
     'crud' => array('fajl' => 'crud', 'szoveg' => 'CRUD'),
+    'crud_add' => array('fajl' => 'crud_add', 'szoveg' => 'Új sütemény hozzáadása'),
     'belepes' => array('fajl' => 'belepes', 'szoveg' => 'Belépés'),
     'kilepes' => array('fajl' => 'kilepes', 'szoveg' => 'Kilépés')
 );

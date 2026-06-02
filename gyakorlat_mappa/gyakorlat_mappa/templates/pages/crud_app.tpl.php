@@ -1,5 +1,6 @@
 <?php
 // Csak akkor fut le, ha megnyomták a küldés gombot
+require_once('includes/config.inc.php');
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['mentes'])) {
     $nev = $_POST['nev'];
     $tipus = $_POST['tipus'];
@@ -8,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['mentes'])) {
     if (!empty($nev) && !empty($tipus)) {
         try {
             $sql = "INSERT INTO suti (nev, tipus, dijazott) VALUES (:nev, :tipus, :dijazott)";
-            $stmt = $pdo->prepare($sql);
+            $stmt = $dbh->prepare($sql);
             $stmt->execute([
                 'nev' => $nev,
                 'tipus' => $tipus,

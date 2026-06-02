@@ -11,13 +11,13 @@ if (isset($_POST['regisztracio'])) {
 
     if (!empty($cs_nev) && !empty($u_nev) && !empty($login) && !empty($pw)) {
         
-        $stmt = $pdo->prepare("SELECT id FROM felhasznalok WHERE bejelentkezes = ?");
+        $stmt = $dbh->prepare("SELECT id FROM felhasznalok WHERE bejelentkezes = ?");
         $stmt->execute([$login]);
         if ($stmt->fetch()) {
             $reg_uzenet = "<p style='color:red;'>A felhasználónév már foglalt!</p>";
         } else {
             
-            $stmt = $pdo->prepare("INSERT INTO felhasznalok (csaladi_nev, utonev, bejelentkezes, jelszo) VALUES (?, ?, ?, ?)");
+            $stmt = $dbh->prepare("INSERT INTO felhasznalok (csaladi_nev, utonev, bejelentkezes, jelszo) VALUES (?, ?, ?, ?)");
             if ($stmt->execute([$cs_nev, $u_nev, $login, password_hash($pw, PASSWORD_DEFAULT)])) {
                 $reg_uzenet = "<p style='color:green;'>Sikeres regisztráció! Most már beléphet.</p>";
             }
@@ -32,7 +32,7 @@ if (isset($_POST['bejelentkezes'])) {
     $login = trim($_POST['login_nev']);
     $pw = $_POST['jelszo'];
 
-    $stmt = $pdo->prepare("SELECT * FROM felhasznalok WHERE bejelentkezes = ?");
+    $stmt = $dbh->prepare("SELECT * FROM felhasznalok WHERE bejelentkezes = ?");
     $stmt->execute([$login]);
     $user = $stmt->fetch();
 

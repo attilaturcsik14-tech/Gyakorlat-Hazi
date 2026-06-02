@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     if (empty($hibak)) {
         $felhasznalo_id = isset($_SESSION['user_id']) ? $_SESSION['user_id'] : null;
-        $stmt = $pdo->prepare("INSERT INTO uzenetek (felhasznalo_id, nev, email, uzenet) VALUES (?, ?, ?, ?)");
+        $stmt = $dbh->prepare("INSERT INTO uzenetek (felhasznalo_id, nev, email, uzenet) VALUES (?, ?, ?, ?)");
         if($stmt->execute([$felhasznalo_id, $nev, $email, $uzenet_text])) {
             $message = "<p style='color:green;'>Üzenet sikeresen elküldve!</p>";
         }
