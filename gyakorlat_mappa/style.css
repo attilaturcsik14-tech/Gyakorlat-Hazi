@@ -1,6 +1,6 @@
 :root {
-    --primary-color: #2c3e50;    
-    --accent-color: #3498db;     
+    --primary-color: #2c3e50;    /* Sötétkék a menühöz */
+    --accent-color: #3498db;     /* Világoskék kiemelésnek */
     --text-color: #333;
     --bg-color: #f4f7f6;
     --white: #ffffff;
@@ -80,14 +80,14 @@ h2, h3 {
 
 .video-grid {
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap; /* Ha nem férnek el egymás mellett, törnek */
     gap: 20px;
     margin-bottom: 30px;
 }
 
 .video-box {
     flex: 1;
-    min-width: 300px; 
+    min-width: 300px; /* Mobilnál egymás alá kerülnek */
     background: #f9f9f9;
     padding: 15px;
     border: 1px solid #ddd;
@@ -96,7 +96,7 @@ h2, h3 {
 
 .iframe-container {
     position: relative;
-    padding-bottom: 56.25%; 
+    padding-bottom: 56.25%; /* 16:9 arány */
     height: 0;
 }
 
@@ -129,7 +129,7 @@ footer {
 
 @media (max-width: 768px) {
     nav ul {
-        flex-direction: column; 
+        flex-direction: column; /* Mobilon a menü egymás alá kerül */
     }
 
     nav ul li a {

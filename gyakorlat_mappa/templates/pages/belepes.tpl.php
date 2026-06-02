@@ -1,5 +1,4 @@
 <?php
-/** @var PDO $pdo */
 $reg_uzenet = "";
 $login_uzenet = "";
 

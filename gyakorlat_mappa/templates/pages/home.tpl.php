@@ -9,7 +9,7 @@
             Az oldal célja a PHP alapú webfejlesztés alapjainak bemutatása.
         </p>
         
-        <img src="./images/finom_suti.jpg" alt="Projekt kép" class="intro-img">
+        <img src="./images/sziv_suti.jpg" alt="Projekt kép" class="intro-img">
     </article>
 
     <hr>
@@ -48,7 +48,7 @@
 
     <section class="location">
         <h3>Hol találhatóunk?</h3>
-        <p>Nyiregyháza közelében lévő cukrászda</p>
+        <p>A főtér közelében lévő cukrászda</p>
         <div class="map-container">
             <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2725.264251261327!2d19.68962037684063!3d46.9056159367468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4743da19f85078a1%3A0x400c4290c1e11a0!2zS2Vjc2tlbcOpdCwgVsOhcm9zaM6hemE!5e0!3m2!1shu!2shu!4v1715174000000!5m2!1shu!2shu" 

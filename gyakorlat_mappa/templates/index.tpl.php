@@ -1,16 +1,8 @@
-<?php
-/** @var array $oldalak */
-/** @var array $keres */
-/** @var array $hiba_oldal */
-/** @var array $ablakcim */
-/** @var PDO $pdo */
-?>
 <!DOCTYPE html>
 <html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
    
     <title><?php echo $ablakcim['cim']; ?><?php if(($cim = $keres['szoveg']) != $ablakcim['cim']) echo ' - ' . $cim; ?></title>
    
@@ -45,19 +37,8 @@
 </header>
 
     <main>
-<?php
-        
-       
-        $fajl = "./templates/pages/{$keres['fajl']}.tpl.php";
 
-       
-        if (file_exists($fajl)) {
-            include($fajl);
-        } else {
-            
-            include("./templates/pages/404.tpl.php");
-        }
-    ?>
+        <?php include("./templates/pages/{$keres['fajl']}.tpl.php"); ?>
     </main>
 
     <footer>

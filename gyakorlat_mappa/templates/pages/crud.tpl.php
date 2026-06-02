@@ -1,6 +1,5 @@
 <?php
-/** @var PDO $pdo */
-$stmt = $pdo->query("SELECT id, nev, tipus, dijazott FROM suti LIMIT 15"); 
+$stmt = $pdo->query("SELECT id, nev, tipus, dijazott FROM suti LIMIT 15");
 $sutik = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
