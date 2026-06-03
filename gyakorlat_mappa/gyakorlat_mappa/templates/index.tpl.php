@@ -39,7 +39,7 @@
 
     <main>
 
-        <?php include("./templates/pages/{$keres['fajl']}.tpl.php"); ?>
+        <?php include("./templates/pages/{$keres['fajl']}.tpl.php");?>
     </main>
 
     <footer>

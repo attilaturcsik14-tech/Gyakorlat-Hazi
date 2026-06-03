@@ -12,8 +12,8 @@ try {
         // Nethely.hu éles beállítások (a kapott adatok alapján) [cite: 63, 65, 66, 67, 68]
         $host = 'localhost'; // Nethelyen is localhost marad a host [cite: 65]
         $dbname = 'sutemenyek'; // [cite: 66]
-        $user = 'Linati'; // [cite: 67]
-        $password = 'asdasd123!+'; // [cite: 68]
+        $user = 'sutemenyek'; // [cite: 67]
+        $password = 'JL27DQCt@zdHLju'; // [cite: 68]
     }
 
     // A kötelezően előírt PDO csatlakozási struktúra

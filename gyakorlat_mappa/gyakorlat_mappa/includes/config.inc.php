@@ -16,6 +16,7 @@ $oldalak = array(
     'kapcsolat' => array('fajl' => 'kapcsolat', 'szoveg' => 'Kapcsolat'),
     'uzenetek' => array('fajl' => 'uzenetek', 'szoveg' => 'Üzenetek'),
     'crud' => array('fajl' => 'crud', 'szoveg' => 'CRUD'),
+    'Crud' => array('fajl' => 'crud_app', 'szoveg' => 'CRUD Kezelő'),
     'belepes' => array('fajl' => 'belepes', 'szoveg' => 'Belépés'),
     'kilepes' => array('fajl' => 'kilepes', 'szoveg' => 'Kilépés')
 );
