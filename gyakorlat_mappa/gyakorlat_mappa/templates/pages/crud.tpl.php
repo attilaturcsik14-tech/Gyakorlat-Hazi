@@ -21,12 +21,7 @@ $sutik = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 <div class="crud-header">
 
-
     <a href="index.php?page=crud_add" class="btn-add">Add New</a>
-    <?php
-    include("./templates/pages/crud_app.tpl.php");
-    exit;
-    ?>
 </div>
 
 <table class="crud-table">
