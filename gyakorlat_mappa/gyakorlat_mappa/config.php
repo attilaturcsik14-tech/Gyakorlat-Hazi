@@ -1,5 +1,5 @@
 <?php
-$is_local = true;
+$is_local = false;
 
 try {
     if ($is_local) {
