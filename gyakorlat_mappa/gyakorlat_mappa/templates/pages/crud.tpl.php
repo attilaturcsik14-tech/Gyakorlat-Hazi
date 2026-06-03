@@ -1,6 +1,7 @@
 <?php
 $stmt = $dbh->query("SELECT id, nev, tipus, dijazott FROM suti LIMIT 15");
 $sutik = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
 ?>
 
 <style>
@@ -19,7 +20,13 @@ $sutik = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <h2>Sütemények Kezelése (CRUD)</h2>
 
 <div class="crud-header">
+
+
     <a href="index.php?page=crud_add" class="btn-add">Add New</a>
+    <?php
+    include("./templates/pages/crud_app.tpl.php");
+    exit;
+    ?>
 </div>
 
 <table class="crud-table">

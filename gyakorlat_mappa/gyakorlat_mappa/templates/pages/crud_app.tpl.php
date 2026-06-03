@@ -1,6 +1,7 @@
 <?php
 // Csak akkor fut le, ha megnyomták a küldés gombot
-require_once('includes/config.inc.php');
+//require_once('includes/config.inc.php');
+header("./templates/pages/crud.tpl.php");
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['mentes'])) {
     $nev = $_POST['nev'];
     $tipus = $_POST['tipus'];

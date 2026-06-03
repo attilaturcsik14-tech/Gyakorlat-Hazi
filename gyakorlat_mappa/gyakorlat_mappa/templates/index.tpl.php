@@ -26,7 +26,6 @@
                     if(!isset($_SESSION['user_id']) && $url == 'kilepes') continue; 
                     if(isset($_SESSION['user_id']) && $url == 'belepes') continue;
 
-                    if($url == 'crud_add') continue;
                 ?>
                 <li<?= (($keres == $oldal) ? ' class="active"' : '') ?>>
                     <a href="<?= ($url == '/') ? '.' : "?$url" ?>">

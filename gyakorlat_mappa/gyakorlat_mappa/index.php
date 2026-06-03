@@ -1,7 +1,6 @@
 <?php
 session_start();
 require_once('includes/config.inc.php');
-//include('templates/index.tpl.php');
 include('./includes/config.inc.php');
 include('./config.php'); // Itt olvassuk be a $pdo-t!
 $oldal = '/';
